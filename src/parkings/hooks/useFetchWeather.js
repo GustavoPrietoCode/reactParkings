@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 
 const codMadrid = "28";
-const url = `https://www.el-tiempo.net/api/json/v2/provincias/${codMadrid}`;
+const codVall = "47";
+const url = `https://www.el-tiempo.net/api/json/v2/provincias/${codVall}`;
 
 export const useFetchWeather = () => {
 
@@ -22,13 +23,15 @@ export const useFetchWeather = () => {
         try {
             const res = await fetch(url);
             const { ciudades }  = await res.json();
-            const madrid = ciudades[0];
+            const miCiudad = ciudades[0];
+
+            console.log(miCiudad)
             setWeather( {
-                id: madrid.id,
-                name: madrid.name,
-                stateSky: madrid.stateSky.description,
-                tempMax: madrid.temperatures.max,
-                tempMin: madrid.temperatures.min,
+                id: miCiudad.id,
+                name: miCiudad.name,
+                stateSky: miCiudad.stateSky.description,
+                tempMax: miCiudad.temperatures.max,
+                tempMin: miCiudad.temperatures.min,
               })
             } catch (e) {
                 setError(true);

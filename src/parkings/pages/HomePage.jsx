@@ -6,9 +6,18 @@ export const HomePage = () => {
   return (
 
     <>
-      <h1>HomePage</h1>
-      <Weather />
+      <div className='bodyPage bodyHomePage'>
 
+        <main className='main'>
+          <h1>VallaOcio</h1>
+          <p><strong>Conoce las últimas novedades culturales de tu ciudad</strong></p>
+          <Weather />
+        </main>
+
+      </div>
+      
+      
+      
     </>
 
     

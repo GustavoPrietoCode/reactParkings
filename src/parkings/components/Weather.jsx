@@ -2,7 +2,7 @@ import { useFetchWeather } from '../hooks/useFetchWeather'
 
 export const Weather = () => {
 
-    const { data:{id, name}, error, isLoading } = useFetchWeather();
+    const { data:{id, name, stateSky, tempMax, tempMin}, error, isLoading } = useFetchWeather();
   //console.log(data)
 
   if(isLoading){
@@ -23,10 +23,13 @@ export const Weather = () => {
 
 
   return (
-    <div>
-        <h2>
-          {name}
-        </h2>
-    </div>
+    <>
+      <div className='weather'>
+        <h4>La temperatura en {name}</h4>
+        <p>{stateSky} - Temp. Max: <strong>{tempMax}</strong> y Temp. Min: <strong>{tempMin}</strong></p>
+      </div>
+
+    </>
+    
   )
 }

@@ -7,8 +7,10 @@ import './styles.scss'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+
     <BrowserRouter>
       <Home />
     </BrowserRouter>
+    
   </React.StrictMode>
 )

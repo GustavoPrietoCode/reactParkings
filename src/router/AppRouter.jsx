@@ -5,7 +5,7 @@ import { Navbar } from '../ui/components/Navbar'
 
 import { HomePage } from '../parkings/pages/HomePage'
 import { AboutPage } from '../parkings/pages/AboutPage'
-import { ParkingPage } from '../parkings/pages/ParkingPage'
+import { BiblioPage } from '../parkings/pages/BiblioPage'
 
 export const AppRouter = () => {
   return (
@@ -13,8 +13,8 @@ export const AppRouter = () => {
         <Navbar />
         <Routes>
             <Route path='/' element={<HomePage />} />
-            <Route path='about' element={<AboutPage />} />
-            <Route path='parking' element={<ParkingPage />} />
+            <Route path='bibliotecas' element={<BiblioPage />} />
+            <Route path='contacto' element={<AboutPage />} />
         </Routes>
     
     </>

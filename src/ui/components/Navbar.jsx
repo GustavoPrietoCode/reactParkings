@@ -14,20 +14,21 @@ export const Navbar = () => {
                     Home
                 </NavLink>
 
-
                 <NavLink 
                     className="nav-item" 
-                    to="/about"
+                    to="/bibliotecas"
                     >
-                    About
+                    Bibliotecas
                 </NavLink>
 
                 <NavLink 
                     className="nav-item" 
-                    to="/parking"
+                    to="/contacto"
                     >
-                    ParkingPage
+                    Contacto
                 </NavLink>
+
+                
    
             </ul>
 

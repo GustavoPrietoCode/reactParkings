@@ -2,16 +2,17 @@ $font-stack: Helvetica, sans-serif;
 $primary-color: #333;
 
 body {
-
   font: 100% $font-stack;
   color: $primary-color;
 }
 
 nav {
-  position: sticky;
+  position: relative;
   background-color:  $primary-color;
   padding: 20px;
-  top: 0;
+  top: -10px;
+  margin-left: -10px;
+  width:100%;
 
   ul {
     margin: 0;

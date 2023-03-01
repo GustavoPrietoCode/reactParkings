@@ -1,3 +1,5 @@
 # Practice in React
  
-#To start: nmp install & npm run vite
+#To start: 
+# 1) nmp install
+# 2) npm run dev

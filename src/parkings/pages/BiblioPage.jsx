@@ -5,10 +5,12 @@ export const BiblioPage = () => {
   return (
 
     <>
-      <h1>BiblioPage</h1>
 
-      <Bibliotecas />
-    
+      <div className='bodyBiblioPage '>
+        <h1>Listado de Bibliotecas Públicas en Castilla y León </h1>
+
+        <Bibliotecas />
+      </div>
     </>
   )
 }

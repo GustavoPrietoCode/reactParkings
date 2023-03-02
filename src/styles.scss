@@ -95,9 +95,41 @@ nav {
   .blockTwo {
     justify-content: end;
   }
+}
 
+
+.bodyBiblioPage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  background-image: url('src/img/libraries_web.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+
+  h1{
+    padding: 30px;
+  }
+
+  .items{
+    border: 1px solid $primary-color;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .enlaceMaps{
+    margin: 15px;
+  }
+
+  .enlaceMaps a {
+    text-decoration: none;
+    
+  }
 
 }
+
 
 
 

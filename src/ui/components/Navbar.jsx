@@ -11,7 +11,7 @@ export const Navbar = () => {
                     className="nav-item" 
                     to="/"
                     >
-                    Home
+                    Inicio
                 </NavLink>
 
                 <NavLink 

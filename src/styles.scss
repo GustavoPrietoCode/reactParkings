@@ -1,4 +1,4 @@
-$font-stack: Helvetica, sans-serif;
+$font-stack: Roboto, sans-serif;
 $primary-color: #333;
 
 body {
@@ -12,7 +12,6 @@ nav {
   position: relative;
   background-color:  $primary-color;
   padding: 20px;
-  width:100%;
 
   ul {
     margin: 0;
@@ -28,8 +27,19 @@ nav {
   }
 }
 
+.footer {
+  position:sticky;
+  bottom: 0;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: $primary-color;
+}
+
 .bodyPage{
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,31 +49,55 @@ nav {
   background-image: url('src/img/san-pablo-valladolid.jpg');
   background-size: cover;
   color: #000;
+
+  .main{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .weather{
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
 }
 
-.main{
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 20px;
-  border-radius: 10px;
+.bodyAboutPage {
+  background-image: url('src/img/about.jpg');
+  background-size:auto;
+  background-repeat: no-repeat;
+  color: #000;
+  font-size: 20px;
+
+  .wrapAbout{
+    border: 5px solid $primary-color;
+    //height: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .blockOne,
+  .blockTwo,
+  .blockThree {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid $primary-color;
+  }
+
+  .blockTwo {
+    justify-content: end;
+  }
+
+
 }
 
-.weather{
-  margin-top: 20px;
-  padding: 10px;
-  border: 1px solid gray;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.5);
-}
 
-.footer {
-  border: 1px solid gray;
-  position:sticky;
-  bottom: 0;
-  width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  background-color: $primary-color;
-}
+

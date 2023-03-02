@@ -74,10 +74,9 @@ nav {
 
   .wrapAbout{
     border: 5px solid $primary-color;
-    //height: fit-content;
     padding: 20px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.933);
   }
 
   .blockOne,
@@ -121,11 +120,12 @@ nav {
 
   .enlaceMaps{
     margin: 15px;
+    padding: 5px;
   }
 
   .enlaceMaps a {
     text-decoration: none;
-    
+    color: #000;
   }
 
 }
